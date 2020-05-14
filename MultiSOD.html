@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Multi-spectral SOD</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: "楷体";
+                }
+            nav {
+                width: 80%;
+                margin: 0 auto;
+                height: 100%;
+            }
+            #photo{
+                width: 64px;
+                position: relative;
+                top: 16px;
+                left: 16px;
+                border:2px white solid;
+                border-radius: 50%;
+            }
+            ul{
+                float: right; 
+                margin: 0 auto;
+                padding-left: 0;
+            }
+            li{
+                list-style: none;
+            }
+            li a{
+                line-height: 16px; 
+                text-decoration: none;
+                color: black;
+            }
+            li a:hover{
+                color: orange;
+            }
+            main {
+                position: relative;
+                width: 80%;
+                margin:10px auto;
+            }
+			section > p {
+                color: black;
+                text-indent: 2em;
+                font: 0.8em sans-serif;
+			}
+            section > img {
+                display: block;
+                width: 50%;
+                margin:64px auto;
+            }
+            h2 {
+                color: black;
+            }
+            h3 {
+                color: black;
+                margin: 0 auto;
+            }
+            .author {
+				display: block;
+                width: 100%;
+                margin:32px auto;
+			}
+			.author > p {
+				width: 100%;
+				margin: 0 auto;
+				text-align: center;
+                font: 0.7em sans-serif;
+			}
+
+
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <nav>
+                <h3>Multi-spectral Salient Object Detection by Adversarial Domain Adaptation</h3>
+                <div class="author">
+                    <p>Shaoyue Song, Hongkai Yu, Zhenjiang Miao, Jianwu Fang, Kang Zheng, Cong Ma, and Song Wang</p>
+                </div>
+                <section>
+                    <h3>Abstract</h3>
+                    <p>Salient Object Detection (SOD) plays an important
+                    role in many image-related multimedia applications. Although
+                    there are many existing research works about the salient object
+                    detection in traditional RGB (visible-light spectrum) images,
+                    there are still many complex situations that regular RGB images
+                    cannot provide enough cues for the accurate SOD, such as
+                    the shadow effect, similar appearance between background and
+                    foreground, strong or insufficient illumination, etc. Because of
+                    the success of near-infrared spectrum in many computer vision
+                    tasks, we explore the multi-spectral SOD in the synchronized
+                    RGB images and near-infrared (NIR) images for the both simple
+                    and complex situations. We assume that the RGB SOD in the
+                    existing RGB image datasets could provide references for the
+                    multi-spectral SOD problem. In this paper, we mainly model this
+                    research problem as a deep learning based domain adaptation
+                    from the traditional RGB image data (source domain) to the
+                    multi-spectral data (target domain), and an adversarial deep
+                    domain adaptation model is proposed. We first collect and will
+                    publicize a large multi-spectral dataset, RGBN-SOD dataset,
+                    including 780 synchronized RGB and NIR image pairs for the
+                    multi-spectral SOD problem in the simple and complex situations.
+                    Experimental results show the effectiveness and accuracy of the
+                    proposed deep domain adaptation for the multi-spectral SOD.</p>
+                </section>
+                
+                <section>
+                    <img src="figure/motivation.png" alt="motivation">
+                </section>
+                <p></p>
+                <section>
+                    <img src="figure/distribution.png" alt="distribution">
+                </section> 
+                <section>
+                    <h3>Publication</h3>
+                    <p>S. Song, H. Yu, Z. Miao, J. Fang, K. Zheng, C. Ma, S. Wang. <b>Multi-spectral Salient Object Detection by Adversarial Domain Adaptation</b>, 
+                    AAAI Conference on Artificial Intelligence (AAAI), New York, NY, 2020. </p>
+                </section>
+                <section>
+                    <h3>Dataset</h3>
+                <li>
+                   <p>[<a href="document/readme_dataset.txt">ReadMe</a>|Download RGBN-SOD Dataset: <a href="https://pan.baidu.com/s/1Xt6HSvuOQNelf7up1JFjzA">BanduYun</a>|For <a href="https://">evaluate</a>]</p>
+                   <p>Dataset split files for supervised task [<a href="document/train.txt">train</a>|<a href="document/val.txt">val</a>|<a href="document/test.txt">test</a>]</p>
+                   <br>If you think this work is helpful, please cite our paper. Thanks.
+                </li>
+                </section>
+            </nav>
+        </main>
+
+        <hr> 
+        <p id="myself" style="text-align: center;">&copy;tsllb~</p>
+    
+    </body>
+</html>

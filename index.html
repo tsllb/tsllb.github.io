@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: "楷体";
+			}
+			ul, li {
+				list-style: none;
+			}
+			a {
+				text-decoration: none;
+				color: #000;
+			}
+			header {
+				position: fixed;
+				width: 100%;
+				top: 0;
+				height: 64px;
+				background: gray;
+			}
+			nav {
+				width: 60%;
+				margin: 0 auto;
+				height: 100%;
+			}
+			.bgClass {
+				float: left;
+				width: 68px;
+				height: 68px;
+				border: 2px solid #fff;
+				border-radius: 50%;
+				margin: 16px;
+				background: url(figure/tuzki.jpg) no-repeat;
+				background-size: 100% 100%;
+			}
+			.ulClass {
+				display: flex;
+				justify-content: flex-end;
+			}
+			.ulClass > li > a {
+				display: block;
+				line-height: 64px;
+				width: 118px;
+				text-align: center;
+				font-size: 18px;
+			}
+			.ulClass > li > a:hover {
+				color: orange;
+				background: azure;
+			}
+			article {
+				width: 60%;
+				margin: 0 auto;
+				padding-top: 100px;
+				margin-bottom: 60px;
+			}
+			article p {
+				text-indent: 2em;
+				line-height: 42px;
+			}
+			h3 {
+				padding-top: 100px;
+				margin-top: -100px;
+			}
+			.peopleUl > a {
+				color: orange;
+				text-decoration: underline;
+			}
+			.otherUl {
+				padding-left: 30px;
+			}
+			.otherUl > li {
+				list-style-type: disc;
+				padding: 10px 0px;
+			}
+			.otherUl > li > a:hover {
+				color: orange;
+				text-decoration: underline;
+			}
+			.wrap {
+				margin: 30px 0;
+				line-height: 40px;
+				text-indent: 2em;
+				column-count: 3;
+				column-gap: 30px;
+			}
+			.footer {
+				position: fixed;
+				width: 100%;
+				height: 50px;
+				border-top: 1px solid #ccc;
+				bottom: 0;
+				background-color: gray;
+			}
+			.footer > p {
+				width: 60%;
+				margin: 0 auto;
+				text-align: center;
+				line-height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="bgClass"></div>
+				<ul class="ulClass">
+					<!-- <li><a href="#homepage">Home</a></li>
+					<li><a href="#publications">Publications</a></li>
+					<li><a href="#aboutme">About me</a></li> -->
+				</ul>
+			</nav>
+		</header>
+		<article>
+			<!-- <section>
+				<h3 id="homepage">Homepage</h3>
+				<p>HomePage TBD...</p>
+			</section> -->
+			<section>
+				<!-- <TABLE width="500">	 -->
+				<TABLE>
+					<TBODY>
+					<TR>
+						<TD align="left"><img src="figure/ShaoyueSong.png" width="101" height="123" alt="ss"/></TD>
+						<!-- <TD nowrap=""> -->
+						<TD>
+						<font size="2">
+						<DL>
+							<!-- <DD> -->
+							<ul class="peopleUl">
+							<BR> <b> Shaoyue Song </b> 
+							<BR>received the B.E. degree from Beijing Jiaotong University, Beijing, China, in 2014,
+							<BR>and is currently working towards the Ph.D. degree (supervised by Prof. <a href="MultiSOD.html">Zhenjiang Miao</a>) 
+							<BR>at Beijing Jiaotong University. 
+							<BR>In 2018, she was a visiting student (supervised by Prof. <a href="MultiSOD.html">Song Wang</a>) 
+							<BR>at the University of South Carolina, Columbia, 
+							<BR>supported by the China Scholarship Council (CSC). 
+							<BR>She is working closely with Dr.<a href="MultiSOD.html">Hongkai Yu</a>
+							<BR>Her current research interests include salient object detection and image classification.
+							</ul>
+							<!-- </DD> -->
+						</DL></font>
+					</TR></TBODY>
+				</TABLE></ul>
+			</section>
+			<section>
+			    <h3 id="publications">Publications</h3>
+				<ul class="otherUl">
+					<p><li>S. Song, H. Yu, Z. Miao, J. Fang, K. Zheng, C. Ma, S. Wang. <b>Multi-spectral Salient Object Detection by Adversarial Domain Adaptation</b>, 
+						AAAI Conference on Artificial Intelligence (AAAI), New York, NY, 2020. 
+						[<a href="MultiSOD.html">Project Page</a>|<a href="document/aaai20.pdf">PDF</a>]
+					</li></p>
+					<p><li>S. Song, H. Yu, Z. Miao, D. Guo, W. Ke, C. Ma, S. Wang. <b>An Easy-to-Hard Learning Strategy for Within-Image Co-saliency Detection</b>, 
+						Neurocomputing, 358:166-176, 2019. [<a href="SingleSOD.html">Project Page</a>|<a href="document/nero19.pdf">PDF</a>]
+					</li></p>
+					<p><li>S. Song, H. Yu, Z. Miao, Q. Zhang, Y. Lin, S. Wang. <b>Domain Adaptation for Convolutional Neural Networks-Based Remote Sensing Scene Classification</b>, 
+						IEEE Geoscience and Remote Sensing Letters, 16(8):1324-1328, 2019. [<a href="document/igrsl19.pdf">PDF</a>]
+					</li></p>
+					<P><li>S. Song, Z. Miao. <b>Research on Vehicle Type Classification Based on Spatial Pyramid Representation and BP Neural Network</b>，
+						International Conference on Image and Graphics (ICIG), China, Tianjin, 2015. [<a href="document/icig15.pdf">PDF</a>]
+					</li></P>
+				</ul>
+			    <div class="wrap">
+			    </div>
+		</article>
+		<div class="footer">
+			<p>&copy;tsllb~</p>
+		</div>
+		<!-- <p id="myself" style="text-align: center;">&copy;tsllb~</p> -->
+	</body>
+</html>
