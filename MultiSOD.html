@@ -7,20 +7,12 @@
             * {
                 margin: 0;
                 padding: 0;
-                font-family: "楷体";
+                /* font-family: "楷体"; */
                 }
             nav {
                 width: 80%;
                 margin: 0 auto;
                 height: 100%;
-            }
-            #photo{
-                width: 64px;
-                position: relative;
-                top: 16px;
-                left: 16px;
-                border:2px white solid;
-                border-radius: 50%;
             }
             ul{
                 float: right; 
@@ -40,25 +32,36 @@
             }
             main {
                 position: relative;
-                width: 80%;
+                width: 60%;
                 margin:10px auto;
             }
 			section > p {
                 color: black;
                 text-indent: 2em;
-                font: 0.8em sans-serif;
+                /* font: 0.8em sans-serif; */
 			}
             section > img {
                 display: block;
-                width: 50%;
-                margin:64px auto;
+                width: 256px;
+                margin:64px 32px 64px 0px;
             }
             h2 {
                 color: black;
+                text-align: center;
             }
             h3 {
                 color: black;
                 margin: 0 auto;
+                text-align: center;
+            }
+            .Otherh3 {
+                color: black;
+                margin: 0 auto;
+                text-align: left;
+            }
+            .Otherp {
+                color: black;
+                text-indent: 0;
             }
             .author {
 				display: block;
@@ -69,7 +72,7 @@
 				width: 100%;
 				margin: 0 auto;
 				text-align: center;
-                font: 0.7em sans-serif;
+                font: 0.8em sans-serif;
 			}
 
 
@@ -109,23 +112,25 @@
                     Experimental results show the effectiveness and accuracy of the
                     proposed deep domain adaptation for the multi-spectral SOD.</p>
                 </section>
-                
+                        <TABLE>
+                            <TBODY>
+                            <TR>
+                                <TD align="center"><section><img src="figure/motivation.png" alt="motivation"></section></TD>
+                                <TD nowrap="">
+                                <TD align="center"><section><img src="figure/distribution.png" alt="distribution"></section>
+                            </TR></TBODY>
+                        </TABLE></ul> 
                 <section>
-                    <img src="figure/motivation.png" alt="motivation">
+                    <h3 class="Otherh3">Publication</h3>
+                    <li>
+                    <p class="Otherp">S. Song, H. Yu, Z. Miao, J. Fang, K. Zheng, C. Ma, S. Wang. <b>Multi-spectral Salient Object Detection by Adversarial Domain Adaptation</b>, 
+                    AAAI Conference on Artificial Intelligence (AAAI), New York, NY, 2020. [<a href="https://cse.sc.edu/~songwang/document/aaai20b.pdf">PDF</a>]</p>
+                    </li>
                 </section>
-                <p></p>
                 <section>
-                    <img src="figure/distribution.png" alt="distribution">
-                </section> 
-                <section>
-                    <h3>Publication</h3>
-                    <p>S. Song, H. Yu, Z. Miao, J. Fang, K. Zheng, C. Ma, S. Wang. <b>Multi-spectral Salient Object Detection by Adversarial Domain Adaptation</b>, 
-                    AAAI Conference on Artificial Intelligence (AAAI), New York, NY, 2020. </p>
-                </section>
-                <section>
-                    <h3>Dataset</h3>
+                    <h3 class="Otherh3">Dataset</h3>
                 <li>
-                   <p>[<a href="document/readme_dataset.txt">ReadMe</a>|Download RGBN-SOD Dataset: <a href="https://pan.baidu.com/s/1Xt6HSvuOQNelf7up1JFjzA">BanduYun</a>|For <a href="https://">evaluate</a>]</p>
+                   <p>[<a href="document/readme_dataset.txt">ReadMe</a>|Download RGBN-SOD Dataset: <a href="https://pan.baidu.com/s/1Xt6HSvuOQNelf7up1JFjzA">BanduYun</a>|For <a href="http://cis.csuohio.edu/~h.yu/AAAI2018.html">evaluate</a>]</p>
                    <p>Dataset split files for supervised task [<a href="document/train.txt">train</a>|<a href="document/val.txt">val</a>|<a href="document/test.txt">test</a>]</p>
                    <br>If you think this work is helpful, please cite our paper. Thanks.
                 </li>
